@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS/HTML Workshop with Drivy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+  <h1>Drivy</h1>
+  <br /> 
+  <div id ="formulaire">
+    <div id="car">
+    <p>Car model</p>
+      <input class="model" type="text" placeholder="Car model"/>
+      <br /> 
+      <br />
+      <p>Price by day</p>
+      <input class="price-by-day" type="number" placeholder="Price by day"/>
+      <br />
+      <br /> 
+      <p>Price by km</p>
+      <input class="price-by-km" type="number" placeholder="Price by km"/>
+    </div>
+    <br /> 
+    
+    <div id="rental">
+    <p>Rental begin date</p>
+      <input class="begin" type="date" placeholder="Rental begin date"/>
+      <br />
+      <br /> 
+      <p>Rental end date</p>
+      <input class="end" type="date" placeholder="Rental end date"/>
+      <br />
+      <br /> <p>Distance in km</p>
+      <input class="distance" type="number" placeholder="Distance in km"/>
+      <br />
+      <br /> 
+      <p>Deductible option</p>
+      <input class="option" type="checkbox" placeholder="Deductible option"/>
+      <br />
+      <br />
+      <button id="compute"  >Compute</button>
+    </div>
+
+    <br /> 
+    
+    <div id="actors"></div>
+    </div>
+    <script id="template" type="x-tmpl-mustache">
+      {{#actors}}
+        <div class="actor">
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span>
+        </div>
+      {{/actors}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="drivy.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

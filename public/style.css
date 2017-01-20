@@ -1,0 +1,50 @@
+body
+{
+    
+    background: url('fond2.jpg') no-repeat center center fixed;;
+    background-size: cover;
+}
+
+#car{
+width: 250px;
+margin : auto; 
+
+}
+
+#car input{
+	width: 100%;
+	border-radius: 10px;
+}
+
+#car p{
+	text-align:center;
+}
+#rental
+{
+	width: 250px;
+margin : auto; 
+}
+
+#rental input{
+	width: 100%;
+	border-radius: 10px;
+}
+
+#rental p{
+	text-align:center;
+}
+#rental button{
+	width: 100%;
+}
+h1
+{
+     font-size: 40px;
+     color: #FFF;
+     text-align:center;
+     background-color: gray;
+     border-radius: 10px;
+}
+
+p{
+	color: #FFF;
+}
